@@ -6,13 +6,19 @@ from models.order import Order
 
 app = Flask(__name__)
 
+app.secret_key = "ecommerce_secret_key"
+
 app.config.from_object(Config)
 
 
 db.init_app(app)
 
-with app.app_context():
-    db.create_all()
+try:
+    with app.app_context():
+        db.create_all()
+
+except Exception as e:
+    print(e)
 
 
 @app.route("/")
