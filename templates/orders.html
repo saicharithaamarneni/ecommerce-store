@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h1>
+
+Orders
+
+</h1>
+
+{% for o in orders %}
+
+<div
+style="
+padding:20px;
+background:#eee;
+margin:10px;
+"
+>
+
+<h2>
+
+Order #{{o.id}}
+
+</h2>
+
+<p>
+
+{{o.username}}
+
+</p>
+
+<p>
+
+₹ {{o.total}}
+
+</p>
+
+<p>
+
+{{o.status}}
+
+</p>
+
+</div>
+
+{% endfor %}
+
+</body>
+
+</html>

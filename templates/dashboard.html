@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI';
+}
+
+body{
+
+background:
+
+linear-gradient(
+135deg,
+#eef2ff,
+#f8fafc
+);
+
+min-height:100vh;
+
+}
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 80px;
+
+background:white;
+
+box-shadow:
+
+0 2px 15px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+font-size:30px;
+
+font-weight:bold;
+
+color:#4f46e5;
+
+}
+
+.logout{
+
+background:#ef4444;
+
+padding:12px 20px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+color:white;
+
+}
+
+.hero{
+
+text-align:center;
+
+padding-top:80px;
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+color:#111827;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+margin-top:15px;
+
+color:#666;
+
+}
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+margin-top:70px;
+
+flex-wrap:wrap;
+
+}
+
+.card{
+
+width:260px;
+
+padding:35px;
+
+background:white;
+
+border-radius:18px;
+
+box-shadow:
+
+0 10px 20px rgba(0,0,0,.08);
+
+transition:.3s;
+
+text-align:center;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card h2{
+
+margin-top:10px;
+
+color:#4f46e5;
+
+}
+
+.card a{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:12px 20px;
+
+background:#4f46e5;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="logo">
+
+SHOPIFY
+
+</div>
+
+<a
+class="logout"
+href="/logout"
+>
+
+Logout
+
+</a>
+
+</div>
+
+
+<div class="hero">
+
+<h1>
+
+Welcome {{username}}
+
+</h1>
+
+<p>
+
+Explore your shopping dashboard
+
+</p>
+
+</div>
+
+
+<div class="cards">
+
+<div class="card">
+
+<h1>
+
+🛍
+
+</h1>
+
+<h2>
+
+Browse Products
+
+</h2>
+
+<a href="/products">
+
+Open
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h1>
+
+🛒
+
+</h1>
+
+<h2>
+
+My Cart
+
+</h2>
+
+<a href="/cart">
+
+Open
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h1>
+
+📦
+
+</h1>
+
+<h2>
+
+Orders
+
+</h2>
+
+<a href="/orders">
+
+Open
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h1>
+
+📊
+
+</h1>
+
+<h2>
+
+Admin Panel
+
+</h2>
+
+<a href="/admin">
+
+Open
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Shopify Store</title>
+
+<link
+rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}"
+>
+
+<style>
+
+body{
+
+margin:0;
+
+font-family:'Segoe UI';
+
+background:#f7f8fc;
+
+}
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 80px;
+
+background:white;
+
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+font-size:32px;
+
+font-weight:bold;
+
+color:#4f46e5;
+
+}
+
+.links a{
+
+text-decoration:none;
+
+margin-left:30px;
+
+color:#333;
+
+font-size:18px;
+
+}
+
+.hero{
+
+height:90vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+flex-direction:column;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#4f46e5,
+
+#7c3aed
+
+);
+
+color:white;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:68px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+margin-bottom:30px;
+
+}
+
+button{
+
+padding:16px 32px;
+
+border:none;
+
+border-radius:14px;
+
+font-size:20px;
+
+cursor:pointer;
+
+background:white;
+
+color:#4f46e5;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+.features{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+padding:60px;
+
+background:white;
+
+}
+
+.card{
+
+width:250px;
+
+padding:30px;
+
+border-radius:15px;
+
+background:#fafafa;
+
+box-shadow:
+
+0 0 15px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+color:#4f46e5;
+
+}
+
+.footer{
+
+padding:25px;
+
+text-align:center;
+
+background:#111827;
+
+color:white;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="logo">
+
+SHOPIFY
+
+</div>
+
+<div class="links">
+
+<a href="/login">
+
+Login
+
+</a>
+
+<a href="/register">
+
+Register
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero">
+
+<h1>
+
+🛍 Premium Shopping
+
+</h1>
+
+<p>
+
+Discover • Shop • Enjoy
+
+</p>
+
+<button
+onclick="location.href='/login'"
+>
+
+Start Shopping
+
+</button>
+
+</div>
+
+
+<div class="features">
+
+<div class="card">
+
+<h2>
+
+⚡ Fast Delivery
+
+</h2>
+
+<p>
+
+Get products quickly.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+
+🔒 Secure Payments
+
+</h2>
+
+<p>
+
+Safe and reliable shopping.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+
+🎁 Premium Quality
+
+</h2>
+
+<p>
+
+Best collections selected.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="footer">
+
+© 2026 Shopify Store
+
+</div>
+
+</body>
+
+</html>
